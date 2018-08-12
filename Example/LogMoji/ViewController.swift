@@ -38,7 +38,8 @@ class ViewController: UIViewController {
         
         // Setup Logger Settings //
         LogMoji.logger.logToConsole(true)
-        LogMoji.logger.showTimeStamp(true)
+        LogMoji.logger.setFilePath("Users/alecdilanchian/Desktop/testmoji.txt")
+//        LogMoji.logger.showTimeStamp(true)
         
         // Setup States //
         LogMoji.logger.setStates([
@@ -46,10 +47,5 @@ class ViewController: UIViewController {
             "warning": "⚠️",
             "critical": "🚨"
         ])
-        /* LogMoji.logger.logWith(state: "default", message: "This is a default emoji.")
-        
-        // Change default emoji //
-        LogMoji.logger.changeDefaultState(emoji: "🔥")
-        LogMoji.logger.logWith(state: "changeDefault", message: "This is a changed default.") */
     }
 }

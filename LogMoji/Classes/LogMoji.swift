@@ -83,8 +83,13 @@ public class LogMoji {
                 
                 try messageData.write(toFile: path, options: .atomicWrite)
             } else {
-                let data = message.data(using: .utf8)! as NSData
-                try data.write(toFile: path, options: .atomicWrite)
+                if self.loggerSettings.willShowTimestamp() {
+                    let content = "\(self.getTimestamp()) \(message)".data(using: .utf8)! as NSData
+                    try content.write(toFile: path, options: .atomicWrite)
+                } else {
+                    let data = message.data(using: .utf8)! as NSData
+                    try data.write(toFile: path, options: .atomicWrite)
+                }
             }
         } catch {
             print("[LogMoji Error] 💩 \(error)")
