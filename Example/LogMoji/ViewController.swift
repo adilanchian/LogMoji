@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         // Setup Logger Settings //
         LogMoji.logger.logToConsole(true)
         LogMoji.logger.setFilePath("Users/alecdilanchian/Desktop/testmoji.txt")
-//        LogMoji.logger.showTimeStamp(true)
+        LogMoji.logger.showTimeStamp(true)
         
         // Setup States //
         LogMoji.logger.setStates([

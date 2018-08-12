@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LogMoji'
-  s.version          = '0.2.1'
+  s.version          = '1.0.0'
   s.summary          = 'Associate your log statements with meaningful emojis to better your debugging experience.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'LogMoji is here to help you parse through all your verbose log statements with meaningful emojis that stand out! This simple logger has the ability to log to your console, a specified file path, or both! It also has the ability for you to set as many customs states as you would like. Make your log statements easy to read with LogMoji.'
+  'LogMoji is here to help you parse through all your verbose log statements with meaningful emojis that stand out! This simple logger has the ability to log to your console, a specified file path, or both! It also has the ability for you to set as many customs states as you would like. Make your log statements easier to read with LogMoji.'
                        DESC
 
   s.homepage         = 'https://github.com/adilanchian/LogMoji'
