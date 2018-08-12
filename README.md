@@ -22,7 +22,7 @@ pod 'LogMoji'
 
 ## Author
 
-adilanchian, alec.dilanchian@gmail.com
+Alec Dilanchian, alec.d@pixelogicapps.com
 
 ## License
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LogMoji'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Associate your log statements with meaningful emojis to better your debugging experience.'
 
 # This description is used to generate tags and improve search results.
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/adilanchian/LogMoji'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
-  s.author           = { 'adilanchian' => 'alec.d@pixelogicapps.com' }
-  s.source           = { :git => 'https://github.com/adilanchian/LogMoji.git',:branch => "master", :tag => s.version.to_s }
+  s.author           = { 'Alec Dilanchian' => 'alec.d@pixelogicapps.com' }
+  s.source           = { :git => 'https://github.com/adilanchian/LogMoji.git', :branch => "master", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/alec_dilanchian'
 
   s.ios.deployment_target = '8.0'
