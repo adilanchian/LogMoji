@@ -1,0 +1,6 @@
+framework module LogMoji {
+  umbrella header "LogMoji-umbrella.h"
+
+  export *
+  module * { export * }
+}

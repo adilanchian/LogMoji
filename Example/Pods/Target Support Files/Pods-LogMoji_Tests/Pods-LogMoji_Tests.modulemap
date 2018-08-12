@@ -1,0 +1,6 @@
+framework module Pods_LogMoji_Tests {
+  umbrella header "Pods-LogMoji_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

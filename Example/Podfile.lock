@@ -1,0 +1,16 @@
+PODS:
+  - LogMoji (0.1.1)
+
+DEPENDENCIES:
+  - LogMoji (from `../`)
+
+EXTERNAL SOURCES:
+  LogMoji:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LogMoji: d82d369b557a9c122b549e120aa4c55d91bda3f0
+
+PODFILE CHECKSUM: 6cb2387705f9bc9d2092cde29444ea13cf8cd1f8
+
+COCOAPODS: 1.4.0
