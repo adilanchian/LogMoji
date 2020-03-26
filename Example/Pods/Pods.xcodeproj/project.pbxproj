@@ -17,6 +17,7 @@
 		BEFB81D99CA080BE9875A4A9DACE8E18 /* Pods-LogMoji_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7C64104996BD4C0AF52169A0B13D1C /* Pods-LogMoji_Tests-dummy.m */; };
 		D4C540B59C36F21E3F5C558F34790F64 /* Pods-LogMoji_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8998A5A3DDE4EB71FDEA551336939153 /* Pods-LogMoji_Example-dummy.m */; };
 		D842C6164469E2250B1E6054EF70B4BE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AA53693B5ECF816E11142A4084F2D4 /* Settings.swift */; };
+		DFF0CE64242D0DFC004460FF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF0CE63242D0DFC004460FF /* State.swift */; };
 		F585621DCF5414C3A9A0BE6E097C0189 /* LogMoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85846F2BA86A291FB9C0C773C9B46F60 /* LogMoji.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,11 +36,11 @@
 		07AA53693B5ECF816E11142A4084F2D4 /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = LogMoji/Classes/Settings.swift; sourceTree = "<group>"; };
 		0D379B7EF78AC58B4EE031AC5E71CD1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F9EDDB54C776F68649BAEA47B1BDDEE /* LogMoji.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LogMoji.modulemap; sourceTree = "<group>"; };
-		102B93A2DEF530795B32B781B9001A7F /* LogMoji.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LogMoji.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		102B93A2DEF530795B32B781B9001A7F /* LogMoji.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = LogMoji.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17C7F42EBA41D6947720D35B3288552D /* Pods-LogMoji_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LogMoji_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		28CD34FF1FC93BB093E3DA78943759E7 /* Pods-LogMoji_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LogMoji_Example.modulemap"; sourceTree = "<group>"; };
 		2DEF34B8BE807BBEB23300F8C194BAD7 /* LogMoji.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LogMoji.xcconfig; sourceTree = "<group>"; };
-		3B5CFE48DE565025C5F30A6F89F8EC16 /* Pods_LogMoji_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LogMoji_Tests.framework; path = "Pods-LogMoji_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5CFE48DE565025C5F30A6F89F8EC16 /* Pods_LogMoji_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogMoji_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1FED594EA94D03DB2BA2848D51CBC7 /* Pods-LogMoji_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LogMoji_Example-resources.sh"; sourceTree = "<group>"; };
 		524BEDE4B119C70FB17D9621D55856C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54286957648CF049314BE4FD967447CA /* Pods-LogMoji_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LogMoji_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,10 +50,10 @@
 		7F53DDB0F1DA1252FB0E54AFBCF8C331 /* Pods-LogMoji_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LogMoji_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		85846F2BA86A291FB9C0C773C9B46F60 /* LogMoji.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMoji.swift; path = LogMoji/Classes/LogMoji.swift; sourceTree = "<group>"; };
 		8998A5A3DDE4EB71FDEA551336939153 /* Pods-LogMoji_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LogMoji_Example-dummy.m"; sourceTree = "<group>"; };
-		8BD07CE03A0CB7044CF275DEF6ACD10E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8BD07CE03A0CB7044CF275DEF6ACD10E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		91A3AB818609FBE13F262333AA358575 /* Pods-LogMoji_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LogMoji_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B6E9B30CC59E239A21C757B6095A6270 /* Pods_LogMoji_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LogMoji_Example.framework; path = "Pods-LogMoji_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6E9B30CC59E239A21C757B6095A6270 /* Pods_LogMoji_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogMoji_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B973C76D04CEE0291E505C8FE4D92269 /* Pods-LogMoji_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LogMoji_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BC329DE74E9441E45FE224AB4DC1CFF5 /* Pods-LogMoji_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LogMoji_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0E9DED37717ADB72104A077CC93BFB5 /* Pods-LogMoji_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LogMoji_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -62,11 +63,12 @@
 		DBBB74D3327471789BF7FB693042E997 /* Pods-LogMoji_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LogMoji_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC378A5B2F869D5779C743D20B5C800A /* LogMoji-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LogMoji-dummy.m"; sourceTree = "<group>"; };
 		DCB0C35F79CA90D0ABBF13BC7C429BFF /* Pods-LogMoji_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LogMoji_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DFF0CE63242D0DFC004460FF /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = State.swift; path = LogMoji/Classes/State.swift; sourceTree = "<group>"; };
 		E50B46CD87A8565769DCF7C23EC6DC37 /* Pods-LogMoji_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LogMoji_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E77CEDCB34D676B765FFDA9000A7528D /* Pods-LogMoji_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LogMoji_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F4DABECA29FFDBC0AD15A02B14F3D475 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		F4DABECA29FFDBC0AD15A02B14F3D475 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		FACFF1B8A99C8F907EC127965FA306D8 /* Pods-LogMoji_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LogMoji_Tests-resources.sh"; sourceTree = "<group>"; };
-		FE733D1AE2AB35E2C45452C1E5838D9F /* LogMoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LogMoji.framework; path = LogMoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE733D1AE2AB35E2C45452C1E5838D9F /* LogMoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogMoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		EF5B764B0BADD6AB22FE510AD000B9EA /* LogMoji */ = {
 			isa = PBXGroup;
 			children = (
+				DFF0CE63242D0DFC004460FF /* State.swift */,
 				85846F2BA86A291FB9C0C773C9B46F60 /* LogMoji.swift */,
 				07AA53693B5ECF816E11142A4084F2D4 /* Settings.swift */,
 				22F2970A599244546701E89EB03FB55E /* Pod */,
@@ -319,6 +322,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -349,6 +353,7 @@
 				BB6171FC02BFEACFD6602318618F9AC4 /* LogMoji-dummy.m in Sources */,
 				F585621DCF5414C3A9A0BE6E097C0189 /* LogMoji.swift in Sources */,
 				D842C6164469E2250B1E6054EF70B4BE /* Settings.swift in Sources */,
+				DFF0CE64242D0DFC004460FF /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

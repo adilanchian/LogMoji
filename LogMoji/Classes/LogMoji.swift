@@ -12,16 +12,9 @@ public class LogMoji {
     //-- Properties --//
     public static let logger = LogMoji()
     private var loggerSettings = Settings()
-    private var defaultState: String = "❓"
-    private var states: Dictionary<String, String>? = nil
     
     public init() {}
-    
-    //-- Methods --//
-    public func setStates(_ states: Dictionary<String, String>) {
-        self.states = states
-    }
-    
+        
     //-- Settings --//
     public func logToConsole(_ value: Bool) {
         self.loggerSettings.logToConsole(value)
@@ -34,57 +27,36 @@ public class LogMoji {
     public func setFilePath(_ path: String?) {
         self.loggerSettings.setFilePath(path)
     }
-    
-    public func changeDefaultState(emoji: String) {
-        self.defaultState = emoji
-    }
-    
+
     //-- Logging --//
-    public func logWith(state: String, message: String) {
-        guard let validStates = self.states else {
-            print("[LogMoji Error] 💩 States is nil. Logging with default emoji.")
-            self.logWithMethod("\(self.defaultState) \(message)")
-            return
-        }
-        
-        if let stateVal = validStates[state] {
-            self.logWithMethod("\(stateVal) \(message)")
-        } else {
-            self.logWithMethod("\(self.defaultState) \(message)")
-        }
+    public func logWith(state: State, message: String) {
+        logWithMethod(state: state, message)
     }
     
-    private func logWithMethod(_ message: String) {
-        if self.loggerSettings.canLogToConsole() {
-            if self.loggerSettings.willShowTimestamp() {
-                print("\(self.getTimestamp()) \(message)")
-            } else {
-                print(message)
-            }
-        }
-        
+    private func logWithMethod(state: State, _ message: String) {
         if let path = loggerSettings.getFilePath() {
-            self.logToFile(path, message)
+            logToFile(path, state: state, message: message)
         }
+        
+        if !loggerSettings.canLogToConsole() {
+           return
+        }
+        print(state.withMessage(message, requiresTimeStamp: loggerSettings.willShowTimestamp()))
     }
     
-    private func logToFile(_ path: String, _ message: String) {
+    private func logToFile(_ path: String, state: State, message: String) {
         do {
+            let log = state.withMessage(message, requiresTimeStamp: loggerSettings.willShowTimestamp())
             if FileManager.default.fileExists(atPath: path) {
                 var fileContent = try String(contentsOfFile: path)
-                
-                if self.loggerSettings.willShowTimestamp() {
-                    fileContent = "\(self.getTimestamp()) \(message)\n\(fileContent)"
-                } else {
-                    fileContent = "\(message)\n\(fileContent)"
-                }
+                fileContent = "\(fileContent)\n\(log)"
                 
                 let messageData = fileContent.data(using: .utf8)! as NSData
                 
                 try messageData.write(toFile: path, options: .atomicWrite)
             } else {
                 if self.loggerSettings.willShowTimestamp() {
-                    let content = "\(self.getTimestamp()) \(message)".data(using: .utf8)! as NSData
+                    let content = log.data(using: .utf8)! as NSData
                     try content.write(toFile: path, options: .atomicWrite)
                 } else {
                     let data = message.data(using: .utf8)! as NSData
@@ -94,11 +66,5 @@ public class LogMoji {
         } catch {
             print("[LogMoji Error] 💩 \(error)")
         }
-    }
-    
-    private func getTimestamp() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = DateFormatter.Style.long
-        return "[\(dateFormatter.string(from: Date()))]"
     }
 }
