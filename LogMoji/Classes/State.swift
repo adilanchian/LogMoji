@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol State {
-    /// Emoji that would be used by the library to print the color of the state
+    /// Emoji that would be used by the library to pretty print the logs
     var emoji: String { get }
     /// Name of the current state the library is on
     var name: String { get }

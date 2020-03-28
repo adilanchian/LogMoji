@@ -28,7 +28,7 @@ LogMoji makes it easy for you to get up and running quickly and easily! For basi
 ```swift
 import LogMoji
 
-enum Errors: String, State {
+enum LogStates: String, State {
     case success, critical, warning
     
     var emoji: String {

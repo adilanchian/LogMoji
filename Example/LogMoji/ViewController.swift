@@ -9,7 +9,7 @@
 import UIKit
 import LogMoji
 
-enum Errors: String, State {
+enum LogStates: String, State {
     case critical, success, warning
     
     var emoji: String {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         log(state: .critical, message: "I am a CRITICAL LogMoji message!")
     }
     
-    func log(state: Errors, message: String) {
+    func log(state: LogStates, message: String) {
         LogMoji.logger.logWith(state: state, message: message)
     }
     
