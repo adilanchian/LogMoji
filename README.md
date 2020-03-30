@@ -28,12 +28,19 @@ LogMoji makes it easy for you to get up and running quickly and easily! For basi
 ```swift
 import LogMoji
 
-// Define your custom log states
-LogMoji.logger.setStates([
-    "success": "✅",
-    "warning": "⚠️",
-    "critical": "🚨"
-])
+enum LogStates: String, State {
+    case success, critical, warning
+    
+    var emoji: String {
+        switch self {
+        case .critical: return "🚨"
+        case .warning: return "⚠️"
+         case .success: return "✅"
+        }
+    }
+    
+    var name: String { self.rawValue }
+}
 
 // Decide where to log & whether to show a timestamp
 LogMoji.logger.logToConsole(true)
@@ -41,9 +48,9 @@ LogMoji.logger.setFilePath("Path/To/File.txt")
 LogMoji.logger.showTimeStamp(false)
 
 // Start Logging!
-LogMoji.logger.logWith(state: "success", message: "I am a successful LogMoji message!")
-LogMoji.logger.logWith(state: "warning", message: "I am a warning LogMoji message!")
-LogMoji.logger.logWith(state: "critical", message: "I am a CRITICAL LogMoji message!")
+LogMoji.logger.logWith(state: Errors.success, message: "I am a successful LogMoji message!")
+LogMoji.logger.logWith(state: Errors.warning, message: "I am a warning LogMoji message!")
+LogMoji.logger.logWith(state: Errors.critical, message: "I am a CRITICAL LogMoji message!")
 ```
 
 #### `setStates(Dictionary<String, String>)`
